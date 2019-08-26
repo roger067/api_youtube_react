@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import youtube from "../service/youtube";
 import SearchBar from "./SearchBar";
 import VideoList from "./VideoList";
@@ -30,20 +31,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
+      <>
         <SearchBar onSearchSubmit={this.onTermSubmit} />
-        <div className="row">
-          <div className="col-8">
-            <VideoDetail video={this.state.selectedVideo} />
-          </div>
-          <div className="col-4">
-            <VideoList
-              onVideoSelect={this.onVideoSelect}
-              videos={this.state.videos}
-            />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-8">
+              <VideoDetail video={this.state.selectedVideo} />
+            </div>
+            <div className="col-sm-4">
+              <VideoList
+                onVideoSelect={this.onVideoSelect}
+                videos={this.state.videos}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
