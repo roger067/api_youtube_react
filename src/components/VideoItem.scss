@@ -3,11 +3,10 @@
     align-items: center !important;
     cursor: pointer;
     margin-bottom: 1rem;
-}
-
-.video-item.item img {
-    max-width: 180px;
-    margin-right: 1rem;
+    img {
+        max-width: 180px;
+        margin-right: 1rem;
+    }
 }
 
 .header {

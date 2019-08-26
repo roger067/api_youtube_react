@@ -4,7 +4,7 @@ import youtube from "../service/youtube";
 import SearchBar from "./SearchBar";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
-import "./style.css";
+import "./style.scss";
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
