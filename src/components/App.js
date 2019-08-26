@@ -33,7 +33,7 @@ class App extends React.Component {
     return (
       <>
         <SearchBar onSearchSubmit={this.onTermSubmit} />
-        <div className="container">
+        <div className="container-fluid" style={{ padding: "0 30px" }}>
           <div className="row">
             <div className="col-sm-8">
               <VideoDetail video={this.state.selectedVideo} />

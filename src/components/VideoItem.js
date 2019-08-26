@@ -1,5 +1,6 @@
 import React from "react";
 import "./VideoItem.scss";
+import { truncate } from "../utils";
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
@@ -10,7 +11,8 @@ const VideoItem = ({ video, onVideoSelect }) => {
         alt={video.snippet.title}
       />
       <div className="content">
-        <div className="header">{video.snippet.title}</div>
+        <div className="header">{truncate(video.snippet.title)}</div>
+        <span>{video.snippet.channelTitle}</span>
       </div>
     </div>
   );
