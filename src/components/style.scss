@@ -21,4 +21,29 @@ body {
     &.bg-light {
         background: #fff !important;
     }
+
+    img {
+        width: 80px;
+        height: auto;
+    }
+
+    ul {
+        margin-bottom: 0;
+        list-style-type: none;
+
+        li {
+            padding: 0 1rem;
+            cursor: pointer;
+            height: 24px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 }
